@@ -3,7 +3,7 @@ For this challenge we were asked to create a loop in VBA that would return the t
 To start with in the VBA code I listed out all my different variables and the value assigned to the variables when necessary.
 I listed out every variable I would need in order to return the required information for the columns we had to create: ticker symbol, the yearly change, the percent change, and the total stock volume. 
 
-I used two IF statements in my code, and both IF statments start with the same equation: If ws.Cells(i - 1, 1).Value <> ws.Cells(i, 1) Then
+I used two IF statements in my code, the first IF statment starts with the equation: If ws.Cells(i - 1, 1).Value <> ws.Cells(i, 1) Then, and the second IF statement starts with the equation: If ws.Cells(i + 1, 1).Value <> ws.Cells(i, 1).Value Then
 
 This statement makes it so that when I run my code excel knows to look at when the cells in the ticker column (Column A) changes ticker symbols. This tells excel when to change to the next ticker symbol and will return all the information for that specific ticker symbol. 
 
